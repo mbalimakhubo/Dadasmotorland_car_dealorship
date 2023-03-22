@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car details-DADASMOTORLAND CAR DEALORSHIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.html"><img src="images/dadasmotorland logo.png" width="185px"></a> 
+        </div>
+
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="showroom.html">Showroom</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="account.html">Account</a></li>
+           </ul> 
+        </nav>
+        <a href="cart.html"><img src="images/CartIcon.png" width="30px" height="30px"></a>       
+         <img src="images/MenubarIcon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  
+  <!---single car details---->
+<div class="small-container ">
+
+</div>
+  <div class="small-container single-car">
+    <div class="row">
+         <div class="col-2">
+             <img src="images/BMW3series.png" width="100%" id="ShowroomImg">
+             <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/i3BMWlatestarrivals.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/i3BMWlatestarrivals.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/i3BMWlatestarrivals.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/i3BMWlatestarrivals.png" width="100%" class="small-img">
+                </div>
+             </div>
+         </div>
+    <div class="col-2">
+         <p>Home / BMW </p>
+         <h1>2020 3 series</h1>
+         <h4>R750 000.00</h4>
+                
+            <a href="" class="btn">Add to cart</a>
+            <h3>Car details</h3>
+            <br>
+            <p>Gas mileage of 26 mpg city, Intercooled Turbo Premium Unleaded I-4, 2.0l,Compact cars,sedan,rear wheel drive,total of 5 passengers,4 passenger doors % 4dr Car body style</p>
+       </div>
+    </div>
+  </div>
+<!----title-->
+<div class="small-container">
+    <div class=" row row-2">
+        <h2>Related cars</h2>
+        <p>View more</p>
+    </div>
+</div>
+<!----cars-->
+ <div class="small-container">
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="images/poloshowroom.png">
+            <h4>VM polo 2018</h4>
+            
+            <p>R450 000.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/Audishowroom.png">
+            <h4>Audi Q2 SUV 2019</h4>
+            
+            <p>R500 987.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/Porcheshowroom.png">
+            <h4>Porche Cayenne Turbo S E-Hybrid Coupe 2020</h4>
+           
+            <p>R3 239 000.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/Porchepanamerashowroom.png">
+            <h4>Porche Panamera 2020</h4>
+            
+            <p>R1 838 000.00</p>
+        </div>
+
+    </div>
+
+
+     
+
+     <!----footer--->
+
+     <div class="footer">
+       <div class="container">
+          <div class="row">
+             <div class="footer-col-1">
+                <h3>Contact Benoni</h3>
+                <p><b>Address:</b>30 Amphill Avenue,Benoni,Gauteng,1501</p>
+                <p><b>Call us:</b>011 422 2299/ 08600 DADAS (32327)</p>
+                <p><b>Operating times:</b>
+                    <ul>
+                        <li><b>Mon- Thurs</b>8am - 5:30pm</li>
+                        <li><b>Fri:</b>8am-12pm | 2pm-5pm</li>
+                        <li><b>Sat:</b>8am-13:30pm</li>
+                        <li><b>Sun:</b>Closed</li>
+                    </ul>
+                </p>
+             </div>
+             <div class="footer-col-2">
+                <img src="images/dadasmotorland logo.png">
+                <p>Driving Passion</p>
+             </div>
+             <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow Us On:</h3>
+                <ul>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                </ul>
+             </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2020 - DadasMotorland</p>
+       </div>
+     </div>
+<!-----js for toggle menu-->
+
+     <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px")
+           {
+               MenuItems.style.maxHeight = "200px";
+           }
+        else{
+            MenuItems.style.maxHeight = "0px";
+            }
+       }
+    </script>
+
+<!-----js for car gallery-->
+
+<script>
+    var ShowroomImg = document.getElementById(ShowroomImg);
+        var SmallImg = document.getElementByClassName("small-img");
+        SmallImg[0].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[3].src;
+        }
+
+</script>
+
+</body>
+</html>

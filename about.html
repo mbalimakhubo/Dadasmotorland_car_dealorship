@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-DADASMOTORLAND CAR DEALORSHIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.html"><img src="images/dadasmotorland logo.png" width="185px"></a> 
+        </div>
+
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="showroom.html">Showroom</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="account.html">Account</a></li>
+           </ul> 
+        </nav>
+        <a href="cart.html"><img src="images/CartIcon.png" width="30px" height="30px"></a>       
+         <img src="images/MenubarIcon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  
+  <!---single car details---->
+<div class="small-container ">
+
+</div>
+  <div class="small-container single-car">
+    <div class="row">
+         <div class="col-2">
+             <img src="images/aboutus.png" width="100%">
+             
+         </div>
+    <div class="col-2">
+         <p>The History of Dadas Motorland </p>
+         <h1>About us</h1>
+         <p>At the tender ages of 18 and 16 respectively the “Dada Brothers” embarked upon an exhilarating and phenomenal journey. Mr. Mohammed Iqbal (Buta) and Mr. Nazir Dada were passionately driven by their vigor and enthusiasm to achieve their lifelong dream. In 1998 “Dadas Motorland” was born in Benoni. These aspiring and inspirational individuals continually strive to reach new heights. Their charismatic personality, strong leadership, entrepreneurial skills and polished business acumen allow them to realize their goals consistently and effectively. Within a short span of time they have broadened their horizons by establishing many branches including Brixton (Johannesburg, 2003) and Fourways (Johannesburg, 2013). They further expanded into the wholesale and retail vehicle sectors, diversifying their market into the vehicle franchising industry taking ownership of a global brand, GWM which is located in the heart of the CBD in Springs (Gauteng). Their astounding growth mirrors their image of delivering superior customer satisfaction.</p>
+            <h3>Stop dreaming...start drving</h3>
+            <br>
+            <p>The Dada Brothers hunger for pursuing excellence at every facet of their business is evidence in the way they operate as a unified unit. Indeed role models, an amazing synergy of efficiency and professionalism. This provides them with the competitive advantage required to achieve renowned industry leadership status in the South African Motor Vehicle Industry. The sensational “Dada Duo” will entice, electrify and provide a mind blowing experience into a world of Motor cars, unbeknown to You, our discerning client!</p>
+            
+       </div>
+    </div>
+  </div>
+
+
+ 
+
+     <!----footer--->
+
+     <div class="footer">
+       <div class="container">
+          <div class="row">
+             <div class="footer-col-1">
+                <h3>Contact Benoni</h3>
+                <p><b>Address:</b>30 Amphill Avenue,Benoni,Gauteng,1501</p>
+                <p><b>Call us:</b>011 422 2299/ 08600 DADAS (32327)</p>
+                <p><b>Operating times:</b>
+                    <ul>
+                        <li><b>Mon- Thurs</b>8am - 5:30pm</li>
+                        <li><b>Fri:</b>8am-12pm | 2pm-5pm</li>
+                        <li><b>Sat:</b>8am-13:30pm</li>
+                        <li><b>Sun:</b>Closed</li>
+                    </ul>
+                </p>
+             </div>
+             <div class="footer-col-2">
+                <img src="images/dadasmotorland logo.png">
+                <p>Driving Passion</p>
+             </div>
+             <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow Us On:</h3>
+                <ul>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                </ul>
+             </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2020 - DadasMotorland</p>
+       </div>
+     </div>
+<!-----js for toggle menu-->
+
+     <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px")
+           {
+               MenuItems.style.maxHeight = "200px";
+           }
+        else{
+            MenuItems.style.maxHeight = "0px";
+            }
+       }
+    </script>
+
+<!-----js for car gallery-->
+
+<script>
+    var ShowroomImg = document.getElementById(ShowroomImg);
+        var SmallImg = document.getElementByClassName("small-img");
+        SmallImg[0].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ShowroomImg.src = SmallImg[3].src;
+        }
+
+</script>
+
+</body>
+</html>

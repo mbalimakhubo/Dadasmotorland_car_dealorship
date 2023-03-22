@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-DADASMOTORLAND CAR DEALORSHIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.html"><img src="images/dadasmotorland logo.png" width="185px"></a>
+        </div>
+
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="showroom.html">Showroom</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="account.html">Account</a></li>
+           </ul> 
+        </nav>
+        <a href="cart.html"><img src="images/CartIcon.png" width="30px" height="30px"></a>
+        <img src="images/MenubarIcon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  
+  <!----Cart Items details-->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                       <img src="images/BMW3series.png"> 
+                       <div>
+                           <p>BMW 3 series 2020</p>
+                           <small>Price: R750 000.00</small>
+                           <br>
+                           <a href="">Remove</a>
+                       </div>
+                    </div>
+                </td>
+                <td>R750 000.00</td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>R700 000.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>R 50 000.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>R 750 000.00</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+     <!----footer--->
+
+     <div class="footer">
+       <div class="container">
+          <div class="row">
+             <div class="footer-col-1">
+                <h3>Contact Benoni</h3>
+                <p><b>Address:</b>30 Amphill Avenue,Benoni,Gauteng,1501</p>
+                <p><b>Call us:</b>011 422 2299/ 08600 DADAS (32327)</p>
+                <p><b>Operating times:</b>
+                    <ul>
+                        <li><b>Mon- Thurs</b>8am - 5:30pm</li>
+                        <li><b>Fri:</b>8am-12pm | 2pm-5pm</li>
+                        <li><b>Sat:</b>8am-13:30pm</li>
+                        <li><b>Sun:</b>Closed</li>
+                    </ul>
+                </p>
+             </div>
+             <div class="footer-col-2">
+                <img src="images/dadasmotorland logo.png">
+                <p>Driving Passion</p>
+             </div>
+             <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow Us On:</h3>
+                <ul>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                </ul>
+             </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2020 - DadasMotorland</p>
+       </div>
+     </div>
+<!-----js for toggle menu-->
+
+     <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px")
+           {
+               MenuItems.style.maxHeight = "200px";
+           }
+        else{
+            MenuItems.style.maxHeight = "0px";
+            }
+       }
+    </script>
+</body>
+</html>
